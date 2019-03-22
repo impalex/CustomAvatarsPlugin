@@ -119,7 +119,7 @@ namespace CustomAvatar
 			// apply offset
 			animator.transform.position = new Vector3(animator.transform.position.x, floorOffset + _initialAvatarPositionY ?? 0, animator.transform.position.z);
 
-			var customFloor = GameObject.Find("Platform Loader");
+			var customFloor = GameObject.Find("Platform Manager");
 			if (customFloor != null)
 			{
 				_initialPlatformPosition = _initialPlatformPosition ?? customFloor.transform.position;
